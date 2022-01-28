@@ -21,12 +21,12 @@ spec:
         - containerPort: {{ .Values.containerPort}}
           protocol: TCP
         livenessProbe:
-           httpGet:
-             path: {{ .Values.livenessProbe.path }}
-             port: {{ .Values.containerPort}}
+          httpGet:
+            path: {{ .Values.livenessProbe.path }}
+            port: {{ .Values.containerPort}}
         readinessProbe:
-           httpGet:
-             path: {{ .Values.readinessProbe.path }}
-             port: {{ .Values.containerPort}}
+          httpGet:
+            path: {{ .Values.readinessProbe.path }}
+            port: {{ .Values.containerPort}}
         resources:
-        {{ toYaml .Values.resources }}
+{{ toYaml .Values.resources | indent 10 }}
