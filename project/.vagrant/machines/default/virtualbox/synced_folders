@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/Users/raval/Downloads/Training/Udacity courses/Cloud native architecture/Cloud native fundamentals/nd064_course_1/project","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}
